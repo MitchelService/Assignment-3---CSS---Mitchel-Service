@@ -2,15 +2,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Stylizes header*/
 h1 {
-  color: #375e97;
+  /*Changed to hotpink*/
+  color: hotpink;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-bottom: 1px solid #375e97;
+  /*Changed to purple, changed to 10px*/
+  border-bottom: 10px solid purple;
+  /*Added Dotted*/
+  border-bottom-style: dotted;
 }
 
+/* Stylizes header 2*/
 h2 {
+  /*Added italics*/
+  font-style: italic;
   font-size: 1.5em;
+}
+
+/* Added for ul style*/
+ul {
+  /*styles the background color to grey*/
+  background-color: #eeeeee;
+  /*creates a soild purple 5px border around the contact information text*/
+  border: 5px solid purple;
+  /*Padding to push the text to be more centerized*/
+  padding: 2em;
+}
+
+/* Colors the email to green*/
+#email-link {
+  color: #008000;
 }
 
 .job-title {
