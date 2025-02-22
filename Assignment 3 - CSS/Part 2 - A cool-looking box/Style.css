@@ -1,5 +1,40 @@
 html {
-  font-family: sans-serif;
-}
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
 
-/* Your CSS below here */
+  div {
+    /* A reasonable width for a large box */
+    width: 250px; 
+    /* A reasonable height for a large box, centering the text vertically in the process. */
+    padding: 190px;
+    /* Center the box horizontally. */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the box horizontally. */
+    text-align: center;
+    /* A slight increase in font size, to around 17-18 pixel computed style. Use rems. */
+     /* I found the value by changing it until it looked nice */
+    font-size: 2rem;
+    /* A base color for the design */
+    background-color: #d30000;
+    /* A contrasting color for the text and a black text shadow. */
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    /* A fairly subtle border radius. */
+    border-radius: 30px;
+    /* A 1-pixel solid border with a color similar to the base color */
+    border-style: solid;
+    /* A linear semi-transparent black gradient */
+    /* NOTE: I USED https://cssgradient.io/ TO HELP MAKE THE COLORS BLEND EASIER  */
+    background: linear-gradient(90deg, rgba(251,1,1,1) 0%, rgba(236,0,0,1) 35%, rgba(143,0,0,1) 100%);
+    /* Multiple box shadows */
+    /* NOTE: I USED AI TO HELP BETTER DEFINE THE VALUES AND GENERAL APPERANCE
+    OF THE SHADOWS */
+    box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.5),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.3);
+  }
