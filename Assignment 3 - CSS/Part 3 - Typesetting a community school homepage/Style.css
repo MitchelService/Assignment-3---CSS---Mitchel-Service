@@ -1,45 +1,147 @@
 /* General setup */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    line-height: 1.5;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+/* custom fonts */
+@font-face {
+  font-family: Ferdinand;
+  src: url(Fonts/Ferdinand.ttf); 
 }
 
-body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
+@font-face {
+  font-family: CaviarDreams;
+  src: url(Fonts/CaviarDreams.ttf); 
 }
 
-/* Layout */
-
-section {
-  float: left;
-  width: 50%;
+/* base font size for body and header */
+body, header {
+  font-size: 10px;
 }
 
-aside {
-  float: left;
-  width: 30%;
+/* Style for h1 and h2 headings */
+h1, h2 {
+  letter-spacing: 2px; 
+  font-family: Ferdinand; 
 }
 
-nav {
-  float: left;
-  width: 20%;
+/* style for h1 specifically */
+h1 {
+  text-align: center; 
+  font-size: 4em; 
 }
 
-footer {
-  clear: both;
+/* style for h2 specifically */
+h2 {
+  font-size: 3em; 
 }
 
-header, section, aside, nav, footer {
-  padding: 20px;
+/* Style for paragraphs, lists, and ordered lists */
+P, ul, ol {
+  letter-spacing: 1.5px; 
+  font-family: CaviarDreams; 
+  font-size: 1.25em;
 }
 
-/* header and footer */
-
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+/* Indent text for elements with the id text-indentation */
+#text-indentation {
+  text-indent: 25px;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
+/* Link styles */
+a:link {
+  color: #c18876; 
+  text-decoration: underline; 
+}
+
+a:visited {
+  color: #db4b1f; 
+}
+
+a:hover {
+  color: #eed0c7; 
+  text-decoration: none; 
+}
+
+a:active {
+  background-color: rgba(255, 0, 0, 0.2); 
+  font-weight: bold; 
+  color: #ec7c59; 
+}
+
+a:focus {
+  outline: none;
+}
+
+/* Reference: https://christianoliff.com/blog/styling-external-links-with-an-icon-in-css/ */
+/* Add an external link icon after external links */
+a[href^="https://"]::after {
+  content: ""; 
+  background-image: url('Images/external-link-52.png'); 
+  display: inline-block;
+  width: 10px; 
+  height: 10px; 
+  background-size: contain; 
+  margin-left: 5px; 
+}
+
+/* Style for navigation list */
+nav ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+/* Style for navigation list items */
+nav ul li a {
+  display: block; 
+  padding: 10px; 
+  text-decoration: none; 
+  color: black; 
+  background-color: white; 
+  border: 1px solid white; 
+  border-radius: 3px; 
+  text-align: center; 
+}
